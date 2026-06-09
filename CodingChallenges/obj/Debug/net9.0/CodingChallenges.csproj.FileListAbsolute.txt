@@ -1,0 +1,15 @@
+C:\Users\leonh\source\repos\backend_coding_challenges\CodingChallenges\bin\Debug\net9.0\CodingChallenges.exe
+C:\Users\leonh\source\repos\backend_coding_challenges\CodingChallenges\bin\Debug\net9.0\CodingChallenges.deps.json
+C:\Users\leonh\source\repos\backend_coding_challenges\CodingChallenges\bin\Debug\net9.0\CodingChallenges.runtimeconfig.json
+C:\Users\leonh\source\repos\backend_coding_challenges\CodingChallenges\bin\Debug\net9.0\CodingChallenges.dll
+C:\Users\leonh\source\repos\backend_coding_challenges\CodingChallenges\bin\Debug\net9.0\CodingChallenges.pdb
+C:\Users\leonh\source\repos\backend_coding_challenges\CodingChallenges\obj\Debug\net9.0\CodingChallenges.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leonh\source\repos\backend_coding_challenges\CodingChallenges\obj\Debug\net9.0\CodingChallenges.AssemblyInfoInputs.cache
+C:\Users\leonh\source\repos\backend_coding_challenges\CodingChallenges\obj\Debug\net9.0\CodingChallenges.AssemblyInfo.cs
+C:\Users\leonh\source\repos\backend_coding_challenges\CodingChallenges\obj\Debug\net9.0\CodingChallenges.csproj.CoreCompileInputs.cache
+C:\Users\leonh\source\repos\backend_coding_challenges\CodingChallenges\obj\Debug\net9.0\CodingChallenges.sourcelink.json
+C:\Users\leonh\source\repos\backend_coding_challenges\CodingChallenges\obj\Debug\net9.0\CodingChallenges.dll
+C:\Users\leonh\source\repos\backend_coding_challenges\CodingChallenges\obj\Debug\net9.0\refint\CodingChallenges.dll
+C:\Users\leonh\source\repos\backend_coding_challenges\CodingChallenges\obj\Debug\net9.0\CodingChallenges.pdb
+C:\Users\leonh\source\repos\backend_coding_challenges\CodingChallenges\obj\Debug\net9.0\CodingChallenges.genruntimeconfig.cache
+C:\Users\leonh\source\repos\backend_coding_challenges\CodingChallenges\obj\Debug\net9.0\ref\CodingChallenges.dll
