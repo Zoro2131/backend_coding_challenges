@@ -15,7 +15,7 @@ public class ReverseString
 
         string result = "";
 
-        // String can be index like an array
+        //String can be index like an array
         //input[i] returns the character at index i
         for(int i = input.Length - 1; i >= 0 ; i--)
         {

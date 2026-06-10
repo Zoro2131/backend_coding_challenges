@@ -18,7 +18,7 @@ using CodingChallenges.Strings;
 //call the method/action availbe in the class
 //inputs the parameter for that type we said it requied in method creation
 fizzBuzz.PrintNumbers(fizzBuzzInput);
-
+System.Console.WriteLine();
 
 //Reverse String 
 
@@ -31,3 +31,24 @@ fizzBuzz.PrintNumbers(fizzBuzzInput);
  string reversed = reverseString.ReverseProcess(aString);
 
  System.Console.WriteLine(reversed);
+ System.Console.WriteLine();
+
+
+//FindMax/FindMin
+//declare and int array
+int[] intergerInput = Array[3, 5, 7, 2, 8, 15, 30, -12, -5];
+
+//declaring classes for Max and Min
+FindMaxInArray findMaxInArray = new FindMaxInArray();
+FindMinInArray findMinInArray = new FindMinInArray();
+
+//declares and initializes the resultValue to the Max in the intergerInput
+int resultValue = findMaxInArray.FindMaxProcess(intergerInput);
+
+System.Console.WriteLine(resultValue);
+System.Console.WriteLine();
+
+resultValue = findMinInArray.FindMinProcess(intergerInput);
+System.Console.WriteLine(resultValue);
+System.Console.WriteLine();
+
