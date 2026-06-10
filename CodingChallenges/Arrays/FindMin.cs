@@ -18,7 +18,7 @@ public class FindMinInArray
 
         //loops to the lenght of the array input
         //indexs up
-        for (int i = 0; i <= findMinInput.Length; i++)
+        for (int i = 0; i < findMinInput.Length; i++)
         {
             //Checks to see if the Current Assing lowest number is greater then 
             //the value at index i 

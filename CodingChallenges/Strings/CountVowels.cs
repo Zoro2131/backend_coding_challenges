@@ -1,4 +1,4 @@
-namespace CodingChallengs.Strings;
+namespace CodingChallenges.Strings;
 
 //A class that will return the amount of vowels in an string input
 public class CountVowels

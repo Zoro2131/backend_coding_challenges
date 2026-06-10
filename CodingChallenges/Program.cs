@@ -4,6 +4,7 @@ using CodingChallenges.Arrays;
 using CodingChallenges.Strings;
 
 
+
 //FizzBuzz
 
 //declares and int array fizzBuzzInput 
@@ -36,19 +37,37 @@ System.Console.WriteLine();
 
 //FindMax/FindMin
 //declare and int array
-int[] intergerInput = Array[3, 5, 7, 2, 8, 15, 30, -12, -5];
+int[] integerInput = new int[] {3, 5, 7, 2, 8, 15, 30, -12, -5};
 
 //declaring classes for Max and Min
 FindMaxInArray findMaxInArray = new FindMaxInArray();
 FindMinInArray findMinInArray = new FindMinInArray();
 
 //declares and initializes the resultValue to the Max in the intergerInput
-int resultValue = findMaxInArray.FindMaxProcess(intergerInput);
+int resultValue = findMaxInArray.FindMaxProcess(integerInput);
 
 System.Console.WriteLine(resultValue);
 System.Console.WriteLine();
 
-resultValue = findMinInArray.FindMinProcess(intergerInput);
+resultValue = findMinInArray.FindMinProcess(integerInput);
 System.Console.WriteLine(resultValue);
 System.Console.WriteLine();
 
+
+//CountVowels
+CountVowels countVowels = new CountVowels();
+int totalVowelsCount = countVowels.CountingVowelsProcess(aString);
+System.Console.WriteLine(totalVowelsCount);
+System.Console.WriteLine();
+
+//FindAverage
+FindAverage findAverage = new FindAverage();
+double findAverageResult = findAverage.FindAverageProcess(integerInput);
+System.Console.WriteLine(findAverageResult);
+System.Console.WriteLine();
+
+//CountEvenNumbers
+CountEvenNumbers countEvenNumbers = new CountEvenNumbers();
+int countEvenNumbersResult = countEvenNumbers.CountEvenNumbersProcess(integerInput);
+System.Console.WriteLine(countEvenNumbersResult);
+System.Console.WriteLine();

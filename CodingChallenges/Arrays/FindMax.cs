@@ -19,7 +19,7 @@ public class FindMaxInArray
 
         //loops to the lenght of the array input
         //indexs up
-        for (int i = 0; i <= findMaxInput.Length; i++)
+        for (int i = 0; i < findMaxInput.Length; i++)
         {
             //preforms a check at the current index location
             // to see if currentMax is less then the index value
