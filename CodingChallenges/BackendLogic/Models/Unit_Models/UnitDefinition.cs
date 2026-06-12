@@ -16,13 +16,32 @@
 // attack speed, is it based on game ticks or somthing else
 
 //Notes:
-// i think it would be best to make a base class type then maybe make overload class of thetype 
+// i think it would be best to make a base class type then maybe make inherited class of the type 
 //for unit upgrades and there different paths they can take and the will change the 
 //parameters/fields based on what we unlock in the game
 
 //Note: Seperate the responablities 
 //What it is from what is does 
 //what it needs to have for the blueprint form what it needs to have when you make an instance of it 
+
+// Notes:
+// Use a Definition + Instance pattern when there is a blueprint
+// that can be used to create many objects in the application.
+//
+// Example:
+// UnitDefinition -> UnitInstance
+//
+// One Recruit definition can create many Recruit units.
+//
+// Recruit Definition
+//      ↓
+// Recruit #1
+// Recruit #2
+// Recruit #3
+//
+// Position, CombatState, BuffModifiers, and DebuffModifiers
+// do not need instances because they are already current-state
+// objects that hold information for a specific unit.
 /*
 All BaseUnits Need:
 Name
@@ -52,6 +71,9 @@ namespace RtsUnitExample.Models
         public int PopulationCost {get; set;} = 0;
         public int BaseUnitExpCost {get; set;} = 0;
         public int BaseBuildTime {get; set;} = 0;
+        public ActiveSkill ActiveSkill {get; set;}
+        public PassiveSkill PassiveSkill {get; set;}
+
     }
 }
 
