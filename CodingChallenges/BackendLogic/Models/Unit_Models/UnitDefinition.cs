@@ -55,7 +55,7 @@ BaseMovementSpeed
 
 PopulationCost
 */
-
+using Skill.Models;
 namespace RtsUnitExample.Models
 {
     public class UnitDefinition
@@ -71,9 +71,8 @@ namespace RtsUnitExample.Models
         public int PopulationCost {get; set;} = 0;
         public int BaseUnitExpCost {get; set;} = 0;
         public int BaseBuildTime {get; set;} = 0;
-        public ActiveSkill ActiveSkill {get; set;}
-        public PassiveSkill PassiveSkill {get; set;}
-
+        public required ActiveSkill ActiveSkill {get; set;}
+        public required PassiveSkill PassiveSkill {get; set;}
     }
 }
 

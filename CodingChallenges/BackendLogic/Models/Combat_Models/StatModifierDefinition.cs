@@ -1,4 +1,5 @@
-namespace RtsCombatExample.Models {
+namespace RtsStatModifierExample.Models 
+{
     public class StatModifier
     {
         //Percentage modifiers 
@@ -12,7 +13,7 @@ namespace RtsCombatExample.Models {
         public int AttackPowerModifier {get; set;} 
         public int AttackRangeModifier {get; set;} 
         public int VisionRangeModifier {get; set;} 
-        public int UnitExpCostModifier {get; set;} = 0; 
+        public int UnitExpCostModifier {get; set;} 
         public int BuildTimeModifier {get; set;} 
     }
 }

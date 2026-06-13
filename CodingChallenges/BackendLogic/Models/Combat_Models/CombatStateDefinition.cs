@@ -1,9 +1,9 @@
-namespace RtsCombatExamples.Models
+namespace RtsCombatState.Models
 {
     //The combat state will be selected based on the zone the unit is currently in. 
     public class BaseCombatState
     {
-        public string Name {get; set;}
+        public string Name {get; set;} = string.Empty;
         public bool CanAttack {get; set;}
 
         //Percentage modifiers
