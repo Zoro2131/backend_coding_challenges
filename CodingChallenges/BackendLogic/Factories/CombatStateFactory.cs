@@ -3,12 +3,12 @@ namespace RtsCombatState.Factory
 {
     public class MakeCombatStates
     {
-        public BaseCombatState NeturalState()
+        public BaseCombatState NeutralState()
         {
-            BaseCombatState neturalState = new()
+            BaseCombatState neutralState = new()
             {
                 //Name of State
-                Name = "Netural State",
+                Name = "Neutral State",
 
                 //Combat check
                 //can we attack or not
@@ -24,7 +24,7 @@ namespace RtsCombatState.Factory
                 AttackRangeModifier = 1,
                 VisionRangeModifier = 1
             };  
-            return neturalState;
+            return neutralState;
         }
     }
 }

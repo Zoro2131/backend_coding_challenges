@@ -2,8 +2,8 @@ namespace RtsUnitExample.Models
 {
     public class UnitPosition
     {
-        double X_Position {get; set;}
-        double Y_Position {get; set;}
-        int ZoneID {get; set;}
+        public double X_Position {get; set;}
+        public double Y_Position {get; set;}
+        public int ZoneID {get; set;}
     }
 }

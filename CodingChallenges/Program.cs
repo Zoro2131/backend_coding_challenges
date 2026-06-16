@@ -1,7 +1,13 @@
 ﻿
 //lets you access namespaces from CodingChallenges
+using System.Runtime.InteropServices;
 using CodingChallenges.Arrays;
 using CodingChallenges.Strings;
+using RtsCombatExamples.Models;
+using RtsCombatState.Factory;
+using RtsCombatState.Models;
+using RtsUnitExample.Models;
+
 
 
 
@@ -9,7 +15,7 @@ using CodingChallenges.Strings;
 
 //declares and int array fizzBuzzInput 
 //uses the Linq in c# to make a range 1 to 100 and cast that using ToArray 
- int[] fizzBuzzInput = Enumerable.Range(1,100).ToArray();
+int[] fizzBuzzInput = Enumerable.Range(1,100).ToArray();
  
  //Declare an instance/object of FizzBuzz Class
  FizzBuzz fizzBuzz = new FizzBuzz();
@@ -71,3 +77,35 @@ CountEvenNumbers countEvenNumbers = new CountEvenNumbers();
 int countEvenNumbersResult = countEvenNumbers.CountEvenNumbersProcess(integerInput);
 System.Console.WriteLine(countEvenNumbersResult);
 System.Console.WriteLine();
+
+//Rts Example Unit Print
+MakeUnitDefinition makeUnitDefinition = new();
+UnitDefinition recruitDefinition = makeUnitDefinition.Recruit();
+System.Console.WriteLine(recruitDefinition.Name);
+System.Console.WriteLine(recruitDefinition.ActiveSkill.Name);
+System.Console.WriteLine(recruitDefinition.PassiveSkill.Name);
+
+MakeCombatStates makeCombatStates = new();
+BaseCombatState neutralState = makeCombatStates.NeutralState();
+System.Console.WriteLine(neutralState.Name);
+
+UnitPosition startingPosition = new()
+{
+    X_Position = 30.0,
+    Y_Position = 30.0,
+    ZoneID = 1
+};
+
+MakeUnitInstance makeUnitInstance = new();
+UnitInstance recruit = 
+    makeUnitInstance.CreateUnit(
+        recruitDefinition,
+        neutralState,
+        startingPosition
+    );
+System.Console.WriteLine(recruit.UnitDefinition.Name);
+Console.WriteLine(recruit.CurrentHealth);
+Console.WriteLine(recruit.CurrentState.Name);
+Console.WriteLine(recruit.UnitDefinition.ActiveSkill.Name);
+Console.WriteLine(recruit.UnitDefinition.PassiveSkill.Name);
+Console.WriteLine(recruit.UnitDefinition.ActiveSkill.CombatEffect.Name);
